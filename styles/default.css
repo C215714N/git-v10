@@ -12,18 +12,53 @@
         h2,
         h3,
         h4,
-        header p{
+        header p,
+        .menu{
             margin: 0;
+        }
+        /* Rellenos */
+        .menu{
+            padding: 0;
         }
         /* Estilos */
         nav a,
         footer a{
             text-decoration: none;
         }
+        .menu{
+            list-style: none;
+        }
     /* Cabecera */
 
     /* Navegacion */
-
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: .5rem;
+            background: linear-gradient(to right,#c36, #448);
+        }
+        nav a{
+            color: #eee;
+        }
+        .menu{
+            width: 100%;
+        }
+        [class*="btn"]{
+            color: #eee;
+            border-radius: .25rem;
+            border: 1px solid;
+            background-color: transparent;
+            font-size: 1.25rem;
+        }
+        [class*="btn"]:hover{
+            color:#448;
+            background-color: #eee;
+        }
+        .btn-open::before{
+            content:'\2630';
+        }
     /* Contenido */
 
     /* Pie de Pagina */
