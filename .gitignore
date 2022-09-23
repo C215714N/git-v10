@@ -1,0 +1,17 @@
+# Archivos
+*.doc
+*.docx
+*.txt
+log*.*
+blame*.*
+*.temp
+*.tmp
+*.swp
+
+# Carpetas
+docs/
+temp/
+tmp/
+node_modules/
+*vsc/
+*vcode/
