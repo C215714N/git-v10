@@ -6,7 +6,20 @@
         font-family: 'Roboto','century gothic','calibri',sans-serif;
         scroll-behavior: smooth;
     }
-    
+        /* Margenes */
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        header p{
+            margin: 0;
+        }
+        /* Estilos */
+        nav a,
+        footer a{
+            text-decoration: none;
+        }
     /* Cabecera */
 
     /* Navegacion */
