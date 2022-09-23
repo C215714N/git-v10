@@ -22,3 +22,10 @@ Esto es una guia practica para los alumnos que cursan los dias _viernes a las 10
 * __git remote rename `old_name` `new_name`:__ cambia el nombre de algun repositorio remoto
 * __git remote set-url `alias` `url`:__ modifica la url del repositorio remoto seleccionado
 * __git remote remove `alias`:__ elimina el repositorio remoto de la lista de direcciones remotas
+
+## Sincronizacion de cambios
+
+* __git clone `url`:__ descarga en una carpeta el contenido de un repositorio remoto.
+* __git push `remote` `branch`:__ envia el historial de confirmaciones al repositorio remoto.
+* __git fetch `remote`:__ descarga el historial de confirmaciones del repositorio remoto.
+* __git pull `remote` `branch`:__ descarga e integra los cambios del repositorio remoto.
