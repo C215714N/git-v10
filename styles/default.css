@@ -1,0 +1,26 @@
+/* Content First - Mobile first */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Poppins');
+    /* Reglas Generales */
+    *{
+        box-sizing: border-box;
+        font-family: 'Roboto','century gothic','calibri',sans-serif;
+        scroll-behavior: smooth;
+    }
+    
+    /* Cabecera */
+
+    /* Navegacion */
+
+    /* Contenido */
+
+    /* Pie de Pagina */
+
+/* Small Devices - Smartphones */
+
+/* Medium Devices - Tablets */
+
+/* Large Devices - Laptops */
+
+/* Extra Large - Desktop */
+
+/* XXL Devices - HD Desktop */
