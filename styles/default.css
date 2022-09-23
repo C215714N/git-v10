@@ -12,7 +12,8 @@
         h2,
         h3,
         h4,
-        header p{
+        header p,
+        .menu{
             margin: 0;
         }
         /* Estilos */
@@ -23,7 +24,36 @@
     /* Cabecera */
 
     /* Navegacion */
-
+        .menu{
+            display: flex;
+            justify-content: space-around;
+            padding: .5rem;
+            background: linear-gradient(#ccc, #248);
+            list-style: none;
+        }
+        .menu a{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #eee;
+            text-shadow: 0 0 .5rem #333;
+        }
+        .menu a::before{
+            font-size: 2rem;
+            line-height: 1.5;
+        }
+        .home::before{
+            content: '🏠';
+        }
+        .about::before{
+            content: '🌁';
+        }
+        .gallery::before{
+            content: '📷';
+        }
+        .contact::before{
+            content: '✉️';
+        }
     /* Contenido */
 
     /* Pie de Pagina */
