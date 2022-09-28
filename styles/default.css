@@ -30,6 +30,15 @@
         }
     /* Cabecera */
 
+        h1 {
+           color: rebeccapurple;
+           text-align: center;
+           background-color: rgb(223, 223, 223);
+           background-image: url(../images/git.png);
+           background-size: contain;
+           background-repeat: no-repeat;
+        }
+
     /* Navegacion */
         nav{
             display: flex;
