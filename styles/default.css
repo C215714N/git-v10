@@ -83,14 +83,17 @@
         /* Colaboradores */
         table{
             margin: 1rem auto;
+            border-collapse: collapse;
         }
         th,
         td,
         table caption{
+            border: 2px solid #c36;
             padding: .5rem 1rem;
         }
-        caption{
+        table caption{
             border-radius: .25rem .25rem 0 0;
+            border-bottom: 0;
         }
         /* Copyright */
 
