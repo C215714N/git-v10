@@ -77,6 +77,22 @@
     /* Contenido */
 
     /* Pie de Pagina */
+    
+        /* Redes sociales */
+
+        /* Colaboradores */
+        table{
+            margin: 1rem auto;
+        }
+        th,
+        td,
+        table caption{
+            padding: .5rem 1rem;
+        }
+        caption{
+            border-radius: .25rem .25rem 0 0;
+        }
+        /* Copyright */
 
 /* Small Devices - Smartphones */
 
