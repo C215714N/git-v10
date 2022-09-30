@@ -88,3 +88,8 @@
 /* Extra Large - Desktop */
 
 /* XXL Devices - HD Desktop */
+@media screen and (min-width: 1400px){
+    nav{
+        padding: 1rem calc(50vw - 660px);
+    }
+}
