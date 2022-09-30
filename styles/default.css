@@ -119,7 +119,18 @@
             background-color: #c366;
         }
         /* Copyright */
-
+        .copy{
+            margin: 0;
+            padding: 1rem;
+            color: #eee;
+            background-color: #448;
+            text-align: center;
+            opacity: .7;
+        }
+        .copy:hover{
+            text-shadow: 0 0 .5rem #eee;
+            opacity: .9;
+        }
 /* Small Devices - Smartphones */
 
 /* Medium Devices - Tablets */
