@@ -35,7 +35,54 @@
         <li>Local Repository: Almacenamiento de cambios (Archivos BLOB)</li>
     </ul>
     <!-- Apuntadores de GIT -->
-
+    <section>
+        <h2>Apuntadores de GIT</h2>
+        <article>
+            <h3>HEAD</h3>
+            <p>
+                Apuntador Movil que indica al usuario en que punto se encuentra dentro del historial de confirmaciones, se utiliza como referencia para navegar dentro del mismo y para ultilizar los diferentes de manera relativa.
+            </p>
+        </article>
+        <article>
+            <h3>BRANCH</h3>
+            <p>
+                Apuntador Dinamico que siempre se corresponde con el ultimo commit de la historia que se esta representando, facilitan la navegacion del historial ya que permiten volver al ultimo cambio realizado. Tambien se utilizan para implementar caracteristicas sin comprometer la linea principal.
+            </p>
+            <ul class="commands">
+                <li><strong>git branch</strong> lista las ramas creadas en el repositorio</li>
+                <li><strong>git branch &lt;branch></strong> crea una rama con el nombre indicado</li>
+                <li><strong>git branch -d &lt;branch></strong> elimina la rama si se integraron los cambios</li>
+                <li><strong>git branch -D &lt;branch></strong> elimina la rama aunque no haya sido fusionada</li>
+                <li><strong>git branch -mv &lt;name> </strong> renombra la rama actual</li>
+                <li><strong>git push &lt;remote> &lt;branch></strong> envia al repositorio remoto la rama seleccionada</li>
+            </ul>
+        </article>
+        <article>
+            <h3>TAG</h3>
+            <p>
+                Apuntador Estatico que se utiliza para el versionado del proyecto, normalmente con nombres como <em>v0.0.0</em>, donde el primer digito correponde a la version principal, el segundo al numero de compilacion, subversion o caracteristica incorporada; y el ultimo para identificar la correccion de errores.
+            </p>
+            <ul class="commands">
+                <li><strong>git tag</strong> muestra las etiquetas asignadas </li>
+                <li><strong>git tag -d &lt;tag></strong> elimina la etiqueta seleccionada</li>
+                <li><strong>git tag &lt;tag></strong> asigna una etiqueta al commit actual</li>
+                <li><strong>git push &lt;remote> --tags</strong> envia al repositorio las etiquetas creadas</li>
+            </ul>
+        </article>
+        <article>
+            <h3>STASH</h3>
+            <p>
+                Apuntador de la zona temporal de cambios (pila stash) que se utiliza cuando necesitamos cambiar de rama y poseemos cambios pendientes en la actual, pero los mismos aun no han sido finalizados y no amerita la realizacion de un commit. Esta apuntador cuando lo aplicamos realiza una operacion merge a la inversa.
+            </p>
+            <ul class="commands">
+                <li><strong>git stash</strong> agrega los cambios del INDEX a la zona STASH</li>
+                <li><strong>git stash list</strong> muestra todas las referencia almacenadas en la zona STASH</li>
+                <li><strong>git stash apply</strong> aplica los cambios del STASH en el Working Directory</li>
+                <li><strong>git stash drop</strong> elimina la referencia de la zona STASH</li>
+                <li><strong>git stash pop</strong> aplica los cambios y elimina la referencia de la zona STASH</li>
+            </ul>
+        </article>
+    </section>
     <!-- Control de Cambios -->
 
     <!-- Pie de Pagina -->
