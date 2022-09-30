@@ -83,14 +83,21 @@
         /* Colaboradores */
         table{
             margin: 1rem auto;
+            border-collapse: collapse;
+            color: #eee;
+            background: linear-gradient(
+                #c36,
+                #448
+            );
         }
         th,
         td,
         table caption{
             padding: .5rem 1rem;
         }
-        caption{
+        table caption{
             border-radius: .25rem .25rem 0 0;
+            background-color: #c36;
         }
         /* Copyright */
 
