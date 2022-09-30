@@ -72,7 +72,17 @@
 /* Small Devices - Smartphones */
 
 /* Medium Devices - Tablets */
-
+@media screen and (min-width: 768px){
+    nav .btn-open{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        gap: .5rem;
+        width: auto;
+        max-height: 640px;
+    }
+}
 /* Large Devices - Laptops */
 
 /* Extra Large - Desktop */
