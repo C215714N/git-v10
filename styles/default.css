@@ -77,6 +77,48 @@
     /* Contenido */
 
     /* Pie de Pagina */
+    
+        /* Redes sociales */
+        .social{
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+            gap: .5rem;
+        }
+        .social a{
+            position: relative;
+            border-radius: .25rem;
+            padding: .5rem;
+            color: #eee;
+            background-color: #333;
+        }
+        .social a:hover{
+            bottom: .25rem;
+            background-color: #555;
+            box-shadow: 0 .2rem .5rem #333;
+        }
+        /* Colaboradores */
+        table{
+            margin: 1rem auto;
+            border-collapse: collapse;
+            box-shadow: 0 0 .5rem;
+        }
+        th,
+        td,
+        table caption{
+            border: 2px solid #c36;
+            padding: .5rem 1rem;
+        }
+        table caption{
+            border-radius: .25rem .25rem 0 0;
+            border-bottom: 0;
+            color: #eee;
+            background-color: #c36;
+        }
+        th{
+            background-color: #c366;
+        }
+        /* Copyright */
 
 /* Small Devices - Smartphones */
 
