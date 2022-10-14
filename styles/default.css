@@ -39,7 +39,16 @@
            background-size: contain;
            background-repeat: no-repeat;
         }
-
+        section h2{
+            margin: -1rem -1rem 1rem;
+            padding: 1rem;
+            color: #eee;
+            background-color: #c36;
+        }
+        section h3{
+            color: #448;
+            border-bottom: 2px solid;
+        }
     /* Navegacion */
         nav{
             display: flex;
@@ -79,7 +88,10 @@
         .cards,
         section{
             margin: 1rem auto;
+            border-radius: .25rem .25rem 0 0;
             padding: 1rem;
+            overflow: hidden;
+            box-shadow: 0 0 1rem #ccc;
         }
         .commands{
             max-width: 960px;
@@ -166,14 +178,32 @@
         width: auto;
         max-height: 640px;
     }
+    .cards,
+    section{
+        max-width: 720px;
+    }
 }
 /* Large Devices - Laptops */
-
+@media screen and (min-width: 992px){
+    .cards,
+    section{
+        max-width: 960px;
+    }
+}
 /* Extra Large - Desktop */
-
+@media screen and (min-width: 1200px){
+    .cards,
+    section{
+        max-width: 1140px;
+    }
+}
 /* XXL Devices - HD Desktop */
 @media screen and (min-width: 1400px){
     nav{
         padding: 1rem calc(50vw - 660px);
+    }
+    .cards,
+    section{
+        max-width: 1320px;
     }
 }
