@@ -139,6 +139,12 @@
         .map-close::before{
             content: '-'
         }
+        .map.active,
+        .btn.map-close{
+            position: fixed;
+            opacity: .9;
+            z-index: 2;
+        }
         /* Redes sociales */
         .social{
             display: flex;
@@ -162,6 +168,7 @@
         table{
             margin: 1rem auto;
             border-collapse: collapse;
+            background-color: #fde;
             box-shadow: 0 0 .5rem;
         }
         th,
