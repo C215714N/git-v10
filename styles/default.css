@@ -25,6 +25,7 @@
         footer a{
             text-decoration: none;
         }
+        .commands,
         .menu{
             list-style: none;
         }
@@ -75,7 +76,28 @@
             content:'\2630';
         }
     /* Contenido */
-
+        .cards,
+        section{
+            margin: 1rem auto;
+            padding: 1rem;
+        }
+        .commands{
+            max-width: 960px;
+            position: relative;
+            margin: 1rem auto;
+            padding: 1.5rem;
+            background-color: #eee;
+            box-shadow: -.2rem .2rem .5rem #999;
+        }
+        .commands::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: .25rem;
+            background: linear-gradient(#c36,#448)
+        }
     /* Pie de Pagina */
     
         /* Redes sociales */
