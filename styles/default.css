@@ -84,6 +84,9 @@
         .btn-open::before{
             content:'\2630';
         }
+        .btn-close::before{
+            content: '\00D7';
+        }
     /* Contenido */
         .cards,
         section{
@@ -193,7 +196,7 @@
 
 /* Medium Devices - Tablets */
 @media screen and (min-width: 768px){
-    nav .btn-open{
+    nav [class*="btn-"]{
         display: none;
     }
     .menu{
