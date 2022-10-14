@@ -14,12 +14,11 @@ window.addEventListener('DOMContentLoaded', () => {
 // Cabecera
 
 // Navegacion
-    menuButton.onclick = toggle(menuButton, menuList, 'btn-open', 'btn-close');
+    menuButton.onclick = (e) => toggle(e.target, menuList, 'btn-open','btn-close');
 // Contenido
 
 // Pie de Pagina
     mapButton.addEventListener('click', (e) => {
         toggle(e.target, mapFrame, 'map-open', 'map-close' )
     } )
-
 }   )
