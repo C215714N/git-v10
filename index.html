@@ -84,7 +84,27 @@
         </article>
     </section>
     <!-- Control de Cambios -->
-
+    <section>
+        <h2>Control de Cambios</h2>
+        <article>
+            <h3>RESET</h3>
+            <p>
+                Comando que elimina los commits desde el ultimo hasta el commit indicado, sin incluirlo. Es ideal si realizamos varias confirmaciones de cambios y nos percatamos que debemos reaplicar los cambios de manera diferencia, pudiendo reescribir el historial.
+            </p>
+        </article>
+        <article>
+            <h3>REVERT</h3>
+            <p>
+                Comando que emite un commit con las operaciones contrarias al commit seleccionado. Es bastante practico si se subieron cambios no deseados al repositorio remoto, ya que eliminar el historial de confirmaciones solamente haria que git nos obligue a descargar nuevamente el registro de cambios .
+            </p>
+        </article>
+        <article>
+            <h3>BISECT</h3>
+            <p>
+                Comando que permite realizar un analisis binario del historial de confirmaciones, solamente debemos indicar cual es el commit que contiene el error y cual es el ultimo commit funcional dentro del proyecto. A partir de esto GIT empezara a saltar entre los commits solicitando la notificacion del usuario para identificar el primer commit que contiene dicho error.
+            </p>
+        </article>
+    </section>
     <!-- Pie de Pagina -->
     <footer id="footer">
         <!-- Mapa de Contacto -->
