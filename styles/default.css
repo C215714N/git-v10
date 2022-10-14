@@ -111,7 +111,31 @@
             background: linear-gradient(#c36,#448)
         }
     /* Pie de Pagina */
-    
+        #footer{
+            position: relative;
+            background-color: #eee8;
+        }
+        /* Mapa de Contacto */
+        .map{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .btn[class*="map-"]{
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background-color: #333;
+        }
+        .map-open::before{
+            content: '+';
+        }
+        .map-close::before{
+            content: '-'
+        }
         /* Redes sociales */
         .social{
             display: flex;
