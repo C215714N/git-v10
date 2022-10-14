@@ -5,6 +5,12 @@ window.addEventListener('DOMContentLoaded', () => {
     const menuList = d.querySelector('nav .menu');
     const mapButton = d.querySelector('#footer .btn[class*="map-"]');
     const mapFrame = d.querySelector('#footer iframe.map');
+// Funciones
+    function toggle(target, element, a, b){
+        element.classList.toggle('active') ?
+        target.classList.replace(a,b) :
+        target.classList.replace(b,a)
+    }
 // Cabecera
 
 // Navegacion
@@ -16,9 +22,4 @@ window.addEventListener('DOMContentLoaded', () => {
         toggle(e.target, mapFrame, 'map-open', 'map-close' )
     } )
 
-    function toggle(target, element, a, b){
-        element.classList.toggle('active') ?
-        target.classList.replace(a,b) :
-        target.classList.replace(b,a)
-    }
 }   )
